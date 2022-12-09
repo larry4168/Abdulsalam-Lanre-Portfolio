@@ -134,14 +134,14 @@ const send = document.querySelector(".form");
 send.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let body = (
+  let body = (`
     <div>
-      <h3>{subject.value}</h3>
-      <b>Full Name: </b>{fname.value}
-      <b>Email: </b>{email.value}
-      <b>Body: </b>{message.value}
+      <h3>${subject.value}</h3>
+      <b>Full Name: </b>${fname.value}
+      <b>Email: </b>${email.value}
+      <b>Body: </b>${message.value}
     </div>
-  );
+  `);
 
   
   Email.send({
