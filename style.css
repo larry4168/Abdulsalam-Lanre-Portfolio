@@ -867,6 +867,11 @@ textarea {
         font-weight: 900;
     }
 
+    .mb-img {
+        height: 190px;
+        width: auto;
+    }
+
     .service-cards{
         padding: 50px 7%;
     }
