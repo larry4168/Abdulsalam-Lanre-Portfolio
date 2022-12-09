@@ -135,14 +135,14 @@ send.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("clicked")
 
-  let body = (`
+  let body = (
     <div>
       <h3>${`subject.value`}</h3>
       <b>Full Name: </b>${`fname.value`}
       <b>Email: </b>${`email.value`}
       <b>Body: </b>${`message.value`}
     </div>
-  `);
+  );
 
   
   Email.send({
