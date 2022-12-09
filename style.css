@@ -1013,6 +1013,10 @@ textarea {
         width: auto;
     }
 
+    .text {
+        font-size: 10px;
+    }
+
     .service {
         padding: 80px 4%;
     }
