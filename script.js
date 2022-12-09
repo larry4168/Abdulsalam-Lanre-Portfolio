@@ -36,7 +36,7 @@ function display() {
   }
 }
 
-const closer = close.addEventListener("click", () => {
+close.addEventListener("click", () => {
   close.style.display = "none";
   menubar.style.display = "block";
   slider();
