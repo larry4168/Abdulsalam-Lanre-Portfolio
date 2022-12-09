@@ -133,14 +133,13 @@ const send = document.querySelector(".form");
 
 send.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("clicked")
 
   let body = (
     <div>
-      <h3>${`subject.value`}</h3>
-      <b>Full Name: </b>${`fname.value`}
-      <b>Email: </b>${`email.value`}
-      <b>Body: </b>${`message.value`}
+      <h3>{subject.value}</h3>
+      <b>Full Name: </b>{fname.value}
+      <b>Email: </b>{email.value}
+      <b>Body: </b>{message.value}
     </div>
   );
 
@@ -148,9 +147,9 @@ send.addEventListener("submit", (e) => {
   Email.send({
     SecureToken: "3181e68a-d5fa-4be9-982f-5aaf11880475",
     To: "abdulsalamlanre6@gmail.com",
-    From: "abdulsalamlanre6@gmail.com",
+    From: email.value,
     Subject: subject.value,
-    Body: "Testing my contact messaging, if its working." + body,
+    Body: body,
   }).then((message) => alert(message));
 
 })
