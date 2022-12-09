@@ -98,6 +98,7 @@ header {
 .close-bar {
     display: none;
     cursor: pointer;
+    color: var(--text-color);
     transform: 0.8s ease-out;
 }
 
@@ -768,6 +769,7 @@ textarea {
 
     .home {
         padding: 30% 8%;
+        line-height: 2.5rem;
         transition: .2s;
     }
 
@@ -889,6 +891,7 @@ textarea {
 
     .home {
         padding: 30% 4%;
+        line-height: 1.5rem;
     }
 
     .home h4 {

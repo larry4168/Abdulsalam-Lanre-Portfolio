@@ -6,7 +6,15 @@ const navlist = document.querySelector(".navbar");
 
 const scroll = () => {
   window.addEventListener('scroll', () => {
-    header.classList.toggle("sticky", window.scrollY > 0);
+    if (!open && navlist.classList != 'nav-active') {
+      header.classList.toggle("sticky", window.scrollY > 0);
+    } 
+    else if (navlist.classList == 'nav-active' && open) {
+
+    }
+    else {
+      header.classList.add("sticky", window.scrollY > 0);
+    }
   })
 };
 
@@ -34,18 +42,20 @@ const closer = close.addEventListener("click", () => {
   slider();
 });
 
+const __close = () => {
+  close.style.display = "none";
+  menubar.style.display = "block";
+  slider();
+}
+
 function slider() {
   scroll();
   if (window.scrollY == 0) {
     header.classList.remove("sticky");
     navlist.classList.remove("nav-active");
-  } else {
+  } 
+  else if (window.scrollY > 0) {
     navlist.classList.remove("nav-active");
-    if (window.scrollY > 0) {
-      navlist.classList.toggle("nav-active");
-    } else {
-      header.classList.toggle("sticky");
-    }
   }
 }
 
