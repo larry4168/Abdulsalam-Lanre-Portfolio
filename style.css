@@ -434,7 +434,7 @@ header.sticky {
     padding: 10px 15px;
     border-radius: 20px;
     position: absolute;
-    bottom: 46%;
+    bottom: 5%;
     text-align: center;
 }
 
@@ -891,7 +891,7 @@ textarea {
 
     .home {
         padding: 30% 4%;
-        line-height: 1.5rem;
+        line-height: 1.8rem;
     }
 
     .home h4 {
@@ -1014,7 +1014,8 @@ textarea {
     }
 
     .text {
-        font-size: 10px;
+        font-size: 8px;
+        padding: 5px 10px;
     }
 
     .service {
