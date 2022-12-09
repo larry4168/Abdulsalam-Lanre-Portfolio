@@ -1005,6 +1005,11 @@ textarea {
         font-size: 11px
     }
 
+    .mb-img {
+        height: 170px;
+        width: auto;
+    }
+
     .service {
         padding: 80px 4%;
     }

@@ -5,7 +5,7 @@ const close = document.querySelector(".close-bar");
 const navlist = document.querySelector(".navbar");
 
 const scroll = () => {
-    window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', () => {
     header.classList.toggle("sticky", window.scrollY > 0);
   })
 };
