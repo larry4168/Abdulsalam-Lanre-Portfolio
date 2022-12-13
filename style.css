@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', 'Poppins', sans-serif;
-    list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
     scroll-padding-top: 3.5rem;
@@ -55,6 +54,7 @@ header {
 .navbar li {
     position: relative;
     text-transform: uppercase;
+    list-style-type: none;
 }
 
 .navbar a {
@@ -280,17 +280,28 @@ header.sticky {
 }
 
 .skills {
-    width: 100%;
     background: var(--sec-bg-color);
     background-position: center;
     background-size: contain;
     padding: 100px 12%;
 }
 
+.sk-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-img {
+    height: 900px;
+    width: auto;
+    right: 5%;
+    top: 10%;
+}
+
 .skills-hd {
     align-items: center;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .skills-hd h3 {
@@ -304,6 +315,37 @@ header.sticky {
 .skills-hd p {
     color: var(--sec-text-color);
     font-size: var(--p-font);
+}
+
+.sk-list {
+    align-items: center;
+    margin: 80px 0;
+    padding: 30px;
+    height: 80vh;
+    width: 100%;
+}
+
+.sk-list h1 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: var(--h2-font);
+    margin-bottom: 4rem;
+}
+
+.sk-ul {
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.sk-ul li {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--sec-text-color);
+    line-height: 1.5rem;
+    padding: 5px;
+    height: 90px;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 .skills-con {
@@ -330,11 +372,17 @@ header.sticky {
 .sk-img4 {
     height: 120px;
     width: 130px;
+    animation: react-spin infinite 40s linear;
 }
 
 .sk-img5 {
-    height: 100px;
+    height: 90px;
     width: 130px;
+}
+
+.sk-img6 {
+    height: 130px;
+    width: 150px;
 }
 
 .skills-card {
@@ -355,9 +403,20 @@ header.sticky {
 }
 
 .skills-card span {
+    flex-shrink: 2;
     font-size: var(--h2-font);
     font-weight: 700;
     color: var(--sec-text-color);
+}
+
+@keyframes react-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .project {
@@ -378,8 +437,8 @@ header.sticky {
 
 .mb-img {
     position: absolute;
-    height: 550px;
-    width: 300px;
+    height: 700px;
+    width: 380px;
     left: 5%;
     top: 15%;
 }
@@ -510,7 +569,7 @@ header.sticky {
 
 .service-hd p {
     color: var(--sec-text-color);
-
+    text-align: center;
 }
 
 .service-cards {
@@ -580,7 +639,7 @@ header.sticky {
 .cont-hd h1 {
     font-size: var(--h2-font);
     color: var(--text-color);
-    font-weight: 700;
+    font-weight: bold;
     letter-spacing: 3px;
 }
 
@@ -643,7 +702,7 @@ header.sticky {
 .mss-hd h1 {
     font-size: var(--h2-font);
     color: var(--text-color);
-    font-weight: 700;
+    font-weight: bold;
     letter-spacing: 3px;
 }
 
@@ -867,9 +926,39 @@ textarea {
         font-weight: 900;
     }
 
+    .sk-flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .skills-img {
+        margin-top: 0;
+        height: 700px;
+    }
+
+    .sk-ul {
+        padding: 10px 20px;
+        margin-bottom: 0;
+    }
+
+    .sk-ul li {
+        font-size: 1.2rem;
+        height: 50px;
+        width: 100%;
+    }
+
+    .slide-img {
+        border-radius: 10px;
+    }
+
     .mb-img {
-        height: 300px;
+        height: 40vh;
         width: auto;
+    }
+
+    .sk-list {
+        padding: 20px;
+        height: 20vh;
     }
 
     .service-cards{
@@ -922,6 +1011,14 @@ textarea {
 
     .service {
         padding: 50px 4%;
+    }
+
+    .sk-list h1 {
+        margin-bottom: 2rem;
+    }
+
+    .skills-hd {
+        margin-bottom: 0;
     }
 
     .navbar {
@@ -999,6 +1096,11 @@ textarea {
         width: 85px;
     }
 
+    .sk-img6 {
+        height: 80px;
+        width: 90px;
+    }
+
     .project {
         padding: 100px 4%;
     }
@@ -1013,8 +1115,12 @@ textarea {
         font-size: 11px
     }
 
+    .slide-img {
+        border-radius: 5px;
+    }
+
     .mb-img {
-        height: 170px;
+        height: 25vh;
         width: auto;
     }
 
