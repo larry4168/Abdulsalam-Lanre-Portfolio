@@ -318,7 +318,7 @@ header.sticky {
 }
 
 .sk-list {
-    align-items: center;
+    align-items: flex-start;
     margin: 80px 0;
     padding: 30px;
     height: 80vh;
@@ -926,6 +926,10 @@ textarea {
         font-weight: 900;
     }
 
+    .skills {
+        padding: 80px 4%;
+    }
+
     .sk-flex {
         flex-direction: column;
         justify-content: center;
@@ -957,6 +961,7 @@ textarea {
     }
 
     .sk-list {
+        margin: 70px 0;
         padding: 20px;
         height: 20vh;
     }
@@ -1011,6 +1016,12 @@ textarea {
 
     .service {
         padding: 50px 4%;
+    }
+
+    .sk-list {
+        margin: 80px 0;
+        padding: 0;
+        height: 20vh;
     }
 
     .sk-list h1 {
