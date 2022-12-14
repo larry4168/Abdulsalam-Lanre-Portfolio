@@ -293,7 +293,7 @@ header.sticky {
 
 .skills-img {
     height: 900px;
-    width: auto;
+    width: 1000px;
     right: 5%;
     top: 10%;
 }
@@ -433,6 +433,8 @@ header.sticky {
 .slide-img {
     vertical-align: middle;
     border-radius: 15px;
+    height: 100%;
+    width: 100%;
 }
 
 .mb-img {
@@ -938,6 +940,7 @@ textarea {
     .skills-img {
         margin-top: 0;
         height: 700px;
+        width: 100%;
     }
 
     .sk-ul {
