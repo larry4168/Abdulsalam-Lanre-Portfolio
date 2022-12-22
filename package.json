@@ -1,0 +1,27 @@
+{
+  "name": "abdulsalam-lanre-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larry4168/Abdulsalam-Lanre-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larry4168/Abdulsalam-Lanre-Portfolio/issues"
+  },
+  "homepage": "https://github.com/larry4168/Abdulsalam-Lanre-Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7"
+  }
+}
